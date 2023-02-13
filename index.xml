@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yui&#39;s personal task manager</title>
-    <link>https://yui.github.io/</link>
+    <link>https://yuistask.github.io/</link>
     <description>Recent content on Yui&#39;s personal task manager</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Feb 2023 23:25:18 +0700</lastBuildDate><atom:link href="https://yui.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Feb 2023 23:25:18 +0700</lastBuildDate><atom:link href="https://yuistask.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Download and Install</title>
-      <link>https://yui.github.io/page/install-download/</link>
+      <link>https://yuistask.github.io/page/install-download/</link>
       <pubDate>Mon, 13 Feb 2023 23:25:18 +0700</pubDate>
       
-      <guid>https://yui.github.io/page/install-download/</guid>
+      <guid>https://yuistask.github.io/page/install-download/</guid>
       <description>Project is in alpha stage now, some features might be missing
  Yui have 2 clients:
  Command line interface, free, requires python Graphical user interface (gui).  Aplha is free As for GUI requires a lot of effort and testing (even worse - we have to pay 3rd party for certification and distribution) stable releases will be paid, unless we got enought donations to keep it free    Installation Before you begin It&amp;rsquo;s recommended to install git first.</description>
