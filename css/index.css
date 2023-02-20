@@ -48,6 +48,13 @@ h1 {
   font-size: 18px;
   font-weight: normal;
 }
+pre > code {
+  border: 1px dashed #777777;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  display: inline-block;
+}
 .salad-gradient {
   background: #00ff00;
   background: -moz-linear-gradient(30deg, #00ff00 0%, #99ff99 100%);
@@ -126,7 +133,7 @@ h1 {
   padding: 50px;
 }
 .home-download__inner {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 .home-download_section-left {
@@ -159,6 +166,37 @@ a.home-download_button:hover {
   display: block;
   margin: 0 auto;
   width: 1024px;
+}
+.home__post {
+  background: rgba(255, 255, 255, 0.7);
+}
+.home__article {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 25px 15px;
+}
+.home__article-title {
+  font-size: 20px;
+  color: #5990de;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #5990de;
+}
+.home__article-title-main {
+  display: inline-block;
+  max-width: 35em;
+}
+.home__article-date-position {
+  position: relative;
+}
+.home__article-date {
+  position: absolute;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 14px;
+  color: #5990de;
+  bottom: -1.5em;
+  left: -4.5em;
+  white-space: nowrap;
 }
 .single {
   max-width: 1024px;

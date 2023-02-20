@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphical User Interface on Yui&#39;s personal task manager</title>
+    <link>https://yuistaskmanager.github.io/tags/graphical-user-interface/</link>
+    <description>Recent content in Graphical User Interface on Yui&#39;s personal task manager</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Feb 2023 01:44:47 +0700</lastBuildDate><atom:link href="https://yuistaskmanager.github.io/tags/graphical-user-interface/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yui&#39;s GUI client 1.0.0-alpha released, dark theme support added</title>
+      <link>https://yuistaskmanager.github.io/post/yui-gui-1.0.0-alpha-dark-theme-support/</link>
+      <pubDate>Mon, 20 Feb 2023 01:44:47 +0700</pubDate>
+      
+      <guid>https://yuistaskmanager.github.io/post/yui-gui-1.0.0-alpha-dark-theme-support/</guid>
+      <description>Light/Dark color scheme detected automatically. Actual look will depend on your system settings.
+Screenshot was made on KDE with Breeze Dark theme.</description>
+    </item>
+    
+  </channel>
+</rss>
