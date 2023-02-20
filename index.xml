@@ -13,9 +13,10 @@
       <pubDate>Mon, 13 Feb 2023 23:25:18 +0700</pubDate>
       
       <guid>https://yuistaskmanager.github.io/page/install-download/</guid>
-      <description>Project is in alpha stage now, some features might be missing
- Yui have 2 clients:
- Command line interface, free, requires python Graphical user interface (gui).  Aplha is free As for GUI requires a lot of effort and testing (even worse - we have to pay 3rd party for certification and distribution) stable releases will be paid, unless we got enought donations to keep it free    Installation Before you begin It&amp;rsquo;s recommended to install git first.</description>
+      <description>Installation Install Yui-CLI (command line) Install from python repository (see also pypi.org/project/yui/)
+pip install yui That&amp;rsquo;s it :)
+Install Yui-GUI alpha  Download installer for windows 10: Yui-1.0.0-alpha-win10-x64-installer.exe (upd:2023-02-20) RPM for Fedora/CentOS/RedHat: coming soon DEB for Ubuntu/Debian: coming soon  Please, submit any bugs found here: github.com/AgaveStorm/yui/issues
+Changelog [2023-02-20] Added  Dark/Light theme support  </description>
     </item>
     
   </channel>
