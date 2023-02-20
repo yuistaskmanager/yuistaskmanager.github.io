@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Feb 2023 00:24:06 +0700</lastBuildDate><atom:link href="https://yuistaskmanager.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Yui-cli 1.0.2 released</title>
-      <link>https://yuistaskmanager.github.io/post/yui-cli-1.0.2-released/</link>
+      <title>Yui-cli 1.0.5 released</title>
+      <link>https://yuistaskmanager.github.io/post/yui-cli-1.0.5-released/</link>
       <pubDate>Tue, 21 Feb 2023 00:24:06 +0700</pubDate>
       
-      <guid>https://yuistaskmanager.github.io/post/yui-cli-1.0.2-released/</guid>
-      <description>pip install yui --upgrade CHANGELOG [2023-02-20] Added  MacOS and Windows changes for yui open error handling for random string instead of taskId  </description>
+      <guid>https://yuistaskmanager.github.io/post/yui-cli-1.0.5-released/</guid>
+      <description>pip install yui --upgrade CHANGELOG [2023-02-20] Added  MacOS and Windows changes for yui open error handling for random string instead of taskId yui open bug fixed for windows platform  </description>
     </item>
     
     <item>
