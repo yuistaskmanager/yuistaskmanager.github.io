@@ -83,33 +83,18 @@ pre > code {
   background: rgba(255, 255, 255, 0.7);
 }
 .header .site-title {
-  float: left;
-  display: block;
-  text-align: center;
+  display: inline-block;
   padding: 0;
   margin: 0 10px 0 0;
+  font-size: 30px;
 }
 .header .site-title a {
-  display: inline-block;
-  font-size: 30px;
   font-weight: normal;
 }
 .header .site-title a img {
   height: 40px;
 }
 .header-hr {
-  margin: 0;
-}
-.header .inner nav {
-  display: inline-block;
-}
-.header .inner nav ul {
-  margin: 0;
-  padding: 0;
-}
-.header .inner nav ul li {
-  list-style: none;
-  padding: 0;
   margin: 0;
 }
 .skill {
@@ -201,6 +186,68 @@ a.home-download_button:hover {
 .single {
   max-width: 1024px;
   margin: 0 auto;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   padding: 50px;
+}
+.single__title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #5990de;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #5990de;
+}
+.single__title-main {
+  display: inline-block;
+  max-width: 35em;
+}
+.single__subtitle-position {
+  position: relative;
+}
+.single__subtitle {
+  position: absolute;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 14px;
+  color: #5990de;
+  bottom: -1.5em;
+  left: -1.5em;
+  white-space: nowrap;
+}
+@media (min-width: 1425px) {
+  .aside-menu {
+    box-sizing: border-box;
+    width: 200px;
+    margin-left: -230px;
+    float: left;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+  }
+}
+.header-menu__container {
+  display: inline-block;
+  vertical-align: baseline;
+  padding-left: 10px;
+}
+.header-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header-menu__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
+}
+.header-menu__item__current:after {
+  content: "";
+  position: absolute;
+  bottom: -0.7em;
+  left: 25%;
+  right: 25%;
+  border-bottom: 4px solid #de5990;
 }

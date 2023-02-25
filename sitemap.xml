@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://yuistaskmanager.github.io/post/</loc>
-    <lastmod>2023-02-21T00:24:06+07:00</lastmod>
+    <loc>https://yuistaskmanager.github.io/howto/</loc>
+    <lastmod>2023-02-25T20:19:33+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yuistaskmanager.github.io/howto/cli/quick-start/</loc>
+    <lastmod>2023-02-25T20:19:33+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://yuistaskmanager.github.io/</loc>
+    <lastmod>2023-02-25T20:19:33+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yuistaskmanager.github.io/post/</loc>
     <lastmod>2023-02-21T00:24:06+07:00</lastmod>
   </url>
   

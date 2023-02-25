@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Yui&#39;s personal task manager</title>
+    
+    <link rel="stylesheet" href="https://yuistaskmanager.github.io/css/index.css"/> 
+    <script lang="jaascript" src="https://yuistaskmanager.github.io/js/eqh.js"></script>
+    <script src="https://www.w3counter.com/tracker.js?id=148457"></script>
+</head>
+<body><header class="header box container-fluid">
+    <div class="inner">
+        <h1 class="site-title"><a href="/">Yui&#39;s personal task manager</a></h1>
+        <nav class="header-menu__container">
+            <ul class="header-menu">
+                    <li class="header-menu__item header-menu__item__current">
+                        
+                            
+                            <span class="header-menu__text">Tutorials</span>
+                            
+                        
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="/page/install-download/">
+                            
+                            <span class="header-menu__text">Download/Install</span>
+                            
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </div>
+</header>
+<div class="clear"></div>
+<hr class="header-hr"/>
+<div id="content">
+	<main class="main">
+		<div class="single">
+			<nav class="aside-menu">
+				<h3 class="aside-menu__title">Tutorials for CLI</h3>
+				<ul>
+					
+					
+					<li>
+						<a href="https://yuistaskmanager.github.io/howto/cli/quick-start/">Quick Start</a>
+					</li>
+				</ul>
+			</nav>
+			<article class="single__article single__article__howto">
+
+				<h1 class="single__title"><span class="single__title-main">Quick Start<span class="single__subtitle-position"><span class="single__subtitle">Tutorial</span></span></span></h1>
+				<div class="single__content"><h2 id="create-first-task">Create first task</h2>
+<p>Open terminal and run the following command:</p>
+<pre><code>yui create cook pho-ga soup
+</code></pre><p>New task will be created, but how to see it?<br>
+Execute:</p>
+<pre><code>yui list heap
+</code></pre><p>You should see the table like this:</p>
+<p><img src="/img/2023-02/howto-cli-quickstat-1.png" alt="yui list heap output"></p>
+<h2 id="pick-the-task-by-id">Pick the task by id</h2>
+<p>2nd column is task id.
+In our case it is 1, so, run:</p>
+<pre><code>yui pick 0
+</code></pre><p>Now, <code>yui list heap</code> will show no tasks, as for task is moved from the heap to current tasks<br>
+View current tasks with</p>
+<pre><code>yui list cur
+</code></pre><p>Now you should see this on your screen:</p>
+<p><img src="/img/2023-02/howto-cli-quickstat-2.png" alt="yui list cur output"></p>
+<p>You are ready to start working on the task.</p>
+<h2 id="open-task">Open task</h2>
+<p>Task can be opened with any text editor you want, but for now, let&rsquo;s use default system editor</p>
+<pre><code>yui open 0
+</code></pre><p>Here is and example, what you should see:</p>
+<p><img src="/img/2023-02/howto-cli-quickstat-3.png" alt="yui open"></p>
+<p>What do you see here?
+Top section:</p>
+<pre><code>---
+name: &quot;cook pho-ga soup&quot;
+created: 2023-02-25 22:09:52 
+context: 
+project: 
+filename:  2023-02-25_22.09.52__cook_pho-ga_soup.0.md
+status: new
+id: 0
+---
+</code></pre><p>This is technical information about task. You will might want to adjust name, context, project, also you will need to change status.</p>
+<h2 id="mark-task-as-work">Mark task as &ldquo;work&rdquo;</h2>
+<p>Change status value from &ldquo;new&rdquo; to &ldquo;work&rdquo; like this.</p>
+<p><img src="/img/2023-02/howto-cli-quickstat-4.png" alt="change status"></p>
+<p>And save the task.<br>
+If you will be interrupted - you will know where to return.</p>
+<h2 id="make-notes-as-you-go">Make notes as you go</h2>
+<h3 id="write-down-ingredients">Write down ingredients</h3>
+<p><img src="/img/2023-02/howto-cli-quickstat-5.png" alt="pho-ga ingredients"></p>
+<h3 id="make-a-plan">Make a plan</h3>
+<p><img src="/img/2023-02/howto-cli-quickstat-6.png" alt="pho-ga plan"></p>
+<h3 id="mark-steps-as-done">Mark steps as done</h3>
+<p><img src="/img/2023-02/howto-cli-quickstat-7.png" alt="pho-ga plan in progress"></p>
+<h2 id="done-mark-task-as-done">Done? Mark task as done</h2>
+<p><img src="/img/2023-02/howto-cli-quickstat-8.png" alt="task done"></p>
+<p>and save the file.</p>
+<pre><code>yui list cur
+</code></pre><p>Will show task as done, like this.</p>
+<p><img src="/img/2023-02/howto-cli-quickstat-9.png" alt="task done list"></p></div>
+			</article>
+		</div>
+	</main>
+
+        </div></body>
+</html>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Yui&#39;s personal task manager</title>
-    <link>https://yuistaskmanager.github.io/</link>
-    <description>Recent content on Yui&#39;s personal task manager</description>
+    <title>Howtos on Yui&#39;s personal task manager</title>
+    <link>https://yuistaskmanager.github.io/howto/</link>
+    <description>Recent content in Howtos on Yui&#39;s personal task manager</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Feb 2023 20:19:33 +0700</lastBuildDate><atom:link href="https://yuistaskmanager.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Feb 2023 20:19:33 +0700</lastBuildDate><atom:link href="https://yuistaskmanager.github.io/howto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quick Start</title>
       <link>https://yuistaskmanager.github.io/howto/cli/quick-start/</link>
@@ -66,37 +66,6 @@ If you will be interrupted - you will know where to return.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;yui list cur
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Will show task as done, like this.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://yuistaskmanager.github.io/img/2023-02/howto-cli-quickstat-9.png&#34; alt=&#34;task done list&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Yui-cli 1.0.5 released</title>
-      <link>https://yuistaskmanager.github.io/post/yui-cli-1.0.5-released/</link>
-      <pubDate>Tue, 21 Feb 2023 00:24:06 +0700</pubDate>
-      
-      <guid>https://yuistaskmanager.github.io/post/yui-cli-1.0.5-released/</guid>
-      <description>pip install yui --upgrade CHANGELOG [2023-02-20] Added  MacOS and Windows changes for yui open error handling for random string instead of taskId yui open bug fixed for windows platform  </description>
-    </item>
-    
-    <item>
-      <title>Yui&#39;s GUI client 1.0.0-alpha released, dark theme support added</title>
-      <link>https://yuistaskmanager.github.io/post/yui-gui-1.0.0-alpha-dark-theme-support/</link>
-      <pubDate>Mon, 20 Feb 2023 01:44:47 +0700</pubDate>
-      
-      <guid>https://yuistaskmanager.github.io/post/yui-gui-1.0.0-alpha-dark-theme-support/</guid>
-      <description>Light/Dark color scheme detected automatically. Actual look will depend on your system settings.
-Screenshot was made on KDE with Breeze Dark theme.</description>
-    </item>
-    
-    <item>
-      <title>Download and Install</title>
-      <link>https://yuistaskmanager.github.io/page/install-download/</link>
-      <pubDate>Mon, 13 Feb 2023 23:25:18 +0700</pubDate>
-      
-      <guid>https://yuistaskmanager.github.io/page/install-download/</guid>
-      <description>Install Yui-CLI (command line) Install from python repository (see also pypi.org/project/yui/)
-pip install yui That&amp;rsquo;s it :)
-Install Yui-GUI alpha  Download installer for windows 10: Yui-1.0.0-alpha-win10-x64-installer.exe (upd:2023-02-20) RPM for Fedora/CentOS/RedHat: coming soon DEB for Ubuntu/Debian: coming soon  Please, submit any bugs found here: github.com/AgaveStorm/yui/issues
-Changelog [2023-02-20] Added  Dark/Light theme support  </description>
     </item>
     
   </channel>
