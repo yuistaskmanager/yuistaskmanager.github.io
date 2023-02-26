@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Yui&#39;s personal task manager</title>
+    
+    <link rel="stylesheet" href="https://yuistaskmanager.github.io/css/index.css?20230226"/> 
+    <script lang="jaascript" src="https://yuistaskmanager.github.io/js/eqh.js"></script>
+    <script src="https://www.w3counter.com/tracker.js?id=148457"></script>
+</head>
+<body><header class="header box container-fluid">
+    <div class="inner">
+        <h1 class="site-title"><a href="/">Yui&#39;s personal task manager</a></h1>
+        <nav class="header-menu__container">
+            <ul class="header-menu">
+                    <li class="header-menu__item"><a class="header-menu__link" href="/howto/cli/quick-start/"
+                        >
+                            
+                            <span class="header-menu__text">Tutorials</span>
+                            
+                        </a>
+                    </li>
+                    <li class="header-menu__item"><a class="header-menu__link" href="/page/install-download/"
+                        >
+                            
+                            <span class="header-menu__text">Download/Install</span>
+                            
+                        </a>
+                    </li>
+                    <li class="header-menu__item"><a class="header-menu__link" href="https://patreon.com/yuistask"target="_blank"
+                        >
+                            
+                            <span class="header-menu__text">Our Patrons</span>
+                            
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </div>
+</header>
+<div class="clear"></div>
+<hr class="header-hr"/>
+<div id="content">
+	<main class="main">
+		<div class="single">
+			<nav class="aside-menu">
+				<h3 class="aside-menu__title">Tutorials for CLI</h3>
+				<ul>
+					
+					
+					
+					
+					<li>
+						<a href="https://yuistaskmanager.github.io/howto/cli/quick-start/">Quick Start</a>
+					</li>
+					<li>
+						<a href="https://yuistaskmanager.github.io/howto/cli/configure-editor/">Configure Editor</a>
+					</li>
+					<li>
+						<a href="https://yuistaskmanager.github.io/howto/cli/archives/">Archives</a>
+					</li>
+				</ul>
+			</nav>
+			<article class="single__article single__article__howto">
+
+				<h1 class="single__title"><span class="single__title-main">Archives<span class="single__subtitle-position"><span class="single__subtitle">Tutorial</span></span></span></h1>
+				<div class="single__content"><p>Let&rsquo;s say you had been working with Yui&rsquo;s task manager for a day and you have list of tasks in the Current.
+Some of them are done, some of them are not.
+You slept a night, wake up, drink you coffee. Time to start a new day.</p>
+<h2 id="review-your-progress">Review your progress</h2>
+<pre><code>yui list cur
+</code></pre><p><img src="/img/2023-02/howto-cli-archive-1.png" alt="yui list cur"></p>
+<p>You have intuitive representation of your progress, the more green you see, the better.<br>
+But you can use the power of console app to count it.</p>
+<pre><code>yui list cur | grep 'done\|fail' | wc -l
+</code></pre><p><img src="/img/2023-02/howto-cli-archive-2.png" alt="yui list cur count"></p>
+<p><code>grep 'done\|fail'</code> will select only rows with <code>done</code> or <code>fail</code> word in it, <code>wc -l</code> will count rows from input.
+Order numbers in first column of <code>yui list cur</code> give us total amount of tasks.</p>
+<p>So, we have <code>5 out of 7</code> tasks done yesterday.</p>
+<blockquote>
+<p><code>fail</code> also represent finished state. If you did 9 pushups yestreday, doing one more today won&rsquo;t make it 10 pushups yesterday.</p>
+</blockquote>
+<h2 id="archive-finished-tasks">Archive finished tasks</h2>
+<p>We do not need to stare at yesterday&rsquo;s done tasks any more, so let&rsquo;s put them in an archive:</p>
+<pre><code>yui archive yesterday
+</code></pre><p>Will create new archive for yesterday and move done tasks there.</p>
+<p><img src="/img/2023-02/howto-cli-archive-3.png" alt="yui archive yesterday"></p>
+<p>Now, if you type</p>
+<pre><code>yui list cur
+</code></pre><p>Only unfinished tasks will be there</p>
+<p><img src="/img/2023-02/howto-cli-archive-4.png" alt="yui list cur"></p>
+<h2 id="view-archived-task">View archived task</h2>
+<p>First, view list of archives</p>
+<pre><code>yui list_archives
+</code></pre><p><img src="/img/2023-02/howto-cli-archive-5.png" alt="yui archive list"></p>
+<p>If you have more than one, frech archives will be at the end of the list.<br>
+Now, use archive name to list tasks in specific archive:</p>
+<pre><code>yui list 2023-02-26
+</code></pre><p><img src="/img/2023-02/howto-cli-archive-6.png" alt="yui list archive"></p>
+<p>And you can open any of the archived task by id, as always</p>
+<pre><code>yui open 1
+</code></pre><p><img src="/img/2023-02/howto-cli-archive-7.png" alt="yui open"></p>
+</div>
+			</article>
+			<div class="howto__buttons">
+				<a href="https://yuistaskmanager.github.io/howto/cli/configure-editor/">&lt;&lt; Configure Editor</a>
+			</div>
+		</div>
+	</main>
+
+        </div></body>
+</html>

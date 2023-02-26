@@ -48,6 +48,10 @@ h1 {
   font-size: 18px;
   font-weight: normal;
 }
+h2 {
+  font-size: 16px;
+  margin: 2em 0 1em 0;
+}
 code {
   color: #de5990;
 }
@@ -58,6 +62,10 @@ pre > code {
   background: rgba(255, 255, 255, 0.7);
   border-radius: 4px;
   display: inline-block;
+}
+blockquote {
+  padding-left: 10px;
+  border-left: 4px solid #5990de;
 }
 .salad-gradient {
   background: #00ff00;
