@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Yui&#39;s personal task manager</title>
+    
+    <link rel="stylesheet" href="https://yuistaskmanager.github.io/css/index.css"/> 
+    <script lang="jaascript" src="https://yuistaskmanager.github.io/js/eqh.js"></script>
+    <script src="https://www.w3counter.com/tracker.js?id=148457"></script>
+</head>
+<body><header class="header box container-fluid">
+    <div class="inner">
+        <h1 class="site-title"><a href="/">Yui&#39;s personal task manager</a></h1>
+        <nav class="header-menu__container">
+            <ul class="header-menu">
+                    <li class="header-menu__item"><a class="header-menu__link" href="/howto/cli/quick-start/"
+                        >
+                            
+                            <span class="header-menu__text">Tutorials</span>
+                            
+                        </a>
+                    </li>
+                    <li class="header-menu__item"><a class="header-menu__link" href="/page/install-download/"
+                        >
+                            
+                            <span class="header-menu__text">Download/Install</span>
+                            
+                        </a>
+                    </li>
+                    <li class="header-menu__item"><a class="header-menu__link" href="https://patreon.com/yuistask"target="_blank"
+                        >
+                            
+                            <span class="header-menu__text">Our Patrons</span>
+                            
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </div>
+</header>
+<div class="clear"></div>
+<hr class="header-hr"/>
+<div id="content">
+	<main class="main">
+		<div class="single">
+			<nav class="aside-menu">
+				<h3 class="aside-menu__title">Tutorials for CLI</h3>
+				<ul>
+					
+					
+					
+					
+					<li>
+						<a href="https://yuistaskmanager.github.io/howto/cli/quick-start/">Quick Start</a>
+					</li>
+					<li>
+						<a href="https://yuistaskmanager.github.io/howto/cli/configure-editor/">Configure Editor</a>
+					</li>
+				</ul>
+			</nav>
+			<article class="single__article single__article__howto">
+
+				<h1 class="single__title"><span class="single__title-main">Configure Editor<span class="single__subtitle-position"><span class="single__subtitle">Tutorial</span></span></span></h1>
+				<div class="single__content"><p>By default, <code>yui open</code> will use default system text editor. But, you can specify any editor you like.
+I will use <code>kate</code> editor by KDE.</p>
+<h2 id="navigate-to-application-working-folder">Navigate to application working folder</h2>
+<p>For Linux, default working folder is <code>~/.yui</code>, for Windows, it is <code>c:\Users\YOUR_USERNAME\AppData\Local\yui</code></p>
+<h2 id="create-configyaml-file-with-the-following-contents">Create config.yaml file with the following contents</h2>
+<pre><code>---
+editor: nohup kate % &gt; /dev/null 2&gt;&amp;1 &amp;
+---
+</code></pre><p>Save the file.
+Now if you try <code>yui open</code> it will open task using Kate editor:</p>
+<p><img src="/img/2023-02/howto-cli-configure-editor-1.png" alt="yui open with kate"></p>
+<h2 id="how-it-works">How it works</h2>
+<pre><code>kate %
+</code></pre><p>This is console command, which will be executed to run edtitor, but <code>%</code> will be replaced by task filename.</p>
+<p>Kate is feature-rich GUI text editor, so we run it in separate process</p>
+<pre><code>kate % &amp;
+</code></pre><p>But, this way editor is still linked to our console, we need to detach it, so it becomes</p>
+<pre><code>nohup kate % &amp;
+</code></pre><p>And we do not want any extra output from editor, so we redirect it to <code>/dev/null</code><br>
+Final command:</p>
+<pre><code>nohup kate % &gt; /dev/null 2&gt;&amp;1 &amp;
+</code></pre></div>
+			</article>
+			<div class="howto__buttons">
+				<a href="https://yuistaskmanager.github.io/howto/cli/quick-start/">&lt;&lt; Quick Start</a>
+			</div>
+		</div>
+	</main>
+
+        </div></body>
+</html>

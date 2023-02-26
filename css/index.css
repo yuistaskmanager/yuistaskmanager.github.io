@@ -48,8 +48,12 @@ h1 {
   font-size: 18px;
   font-weight: normal;
 }
+code {
+  color: #de5990;
+}
 pre > code {
   border: 1px dashed #777777;
+  color: #777777;
   padding: 1em;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 4px;
@@ -132,7 +136,7 @@ pre > code {
   float: right;
   width: 200px;
 }
-.home-download_button {
+.home-download__button {
   display: inline-block;
   background: #5990de;
   border-radius: 4px;
@@ -140,7 +144,10 @@ pre > code {
   padding: 10px;
   cursor: pointer;
 }
-a.home-download_button:hover {
+.home-download__button__report-bug {
+  background: #de5990;
+}
+a.home-download__button:hover {
   color: #ffffff;
 }
 .home-screenshots {
@@ -223,6 +230,9 @@ a.home-download_button:hover {
     padding: 10px;
     border: 1px solid #eee;
     border-radius: 4px;
+  }
+  .aside-menu li {
+    padding: 0 0 1em 0;
   }
 }
 .header-menu__container {

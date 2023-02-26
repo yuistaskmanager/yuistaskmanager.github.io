@@ -6,7 +6,37 @@
     <description>Recent content on Yui&#39;s personal task manager</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Feb 2023 20:19:33 +0700</lastBuildDate><atom:link href="https://yuistaskmanager.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Feb 2023 04:32:26 +0700</lastBuildDate><atom:link href="https://yuistaskmanager.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configure Editor</title>
+      <link>https://yuistaskmanager.github.io/howto/cli/configure-editor/</link>
+      <pubDate>Sun, 26 Feb 2023 04:32:26 +0700</pubDate>
+      
+      <guid>https://yuistaskmanager.github.io/howto/cli/configure-editor/</guid>
+      <description>&lt;p&gt;By default, &lt;code&gt;yui open&lt;/code&gt; will use default system text editor. But, you can specify any editor you like.
+I will use &lt;code&gt;kate&lt;/code&gt; editor by KDE.&lt;/p&gt;
+&lt;h2 id=&#34;navigate-to-application-working-folder&#34;&gt;Navigate to application working folder&lt;/h2&gt;
+&lt;p&gt;For Linux, default working folder is &lt;code&gt;~/.yui&lt;/code&gt;, for Windows, it is &lt;code&gt;c:\Users\YOUR_USERNAME\AppData\Local\yui&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;create-configyaml-file-with-the-following-contents&#34;&gt;Create config.yaml file with the following contents&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;---
+editor: nohup kate % &amp;gt; /dev/null 2&amp;gt;&amp;amp;1 &amp;amp;
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Save the file.
+Now if you try &lt;code&gt;yui open&lt;/code&gt; it will open task using Kate editor:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://yuistaskmanager.github.io/img/2023-02/howto-cli-configure-editor-1.png&#34; alt=&#34;yui open with kate&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;kate %
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is console command, which will be executed to run edtitor, but &lt;code&gt;%&lt;/code&gt; will be replaced by task filename.&lt;/p&gt;
+&lt;p&gt;Kate is feature-rich GUI text editor, so we run it in separate process&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kate % &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;But, this way editor is still linked to our console, we need to detach it, so it becomes&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nohup kate % &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And we do not want any extra output from editor, so we redirect it to &lt;code&gt;/dev/null&lt;/code&gt;&lt;br&gt;
+Final command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nohup kate % &amp;gt; /dev/null 2&amp;gt;&amp;amp;1 &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
     <item>
       <title>Quick Start</title>
       <link>https://yuistaskmanager.github.io/howto/cli/quick-start/</link>
@@ -34,7 +64,7 @@ View current tasks with&lt;/p&gt;
 &lt;h2 id=&#34;open-task&#34;&gt;Open task&lt;/h2&gt;
 &lt;p&gt;Task can be opened with any text editor you want, but for now, let&amp;rsquo;s use default system editor&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;yui open 0
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here is and example, what you should see:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here is an example, what you should see:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://yuistaskmanager.github.io/img/2023-02/howto-cli-quickstat-3.png&#34; alt=&#34;yui open&#34;&gt;&lt;/p&gt;
 &lt;p&gt;What do you see here?
 Top section:&lt;/p&gt;
