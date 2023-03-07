@@ -136,7 +136,7 @@ Screenshot was made on KDE with Breeze Dark theme.</description>
       <guid>https://yuistaskmanager.github.io/page/install-download/</guid>
       <description>Install Yui-CLI (command line) Install from python repository (see also pypi.org/project/yui/)
 pip install yui That&amp;rsquo;s it :)
-Install Yui-GUI alpha  Download installer for windows 10: Yui-1.0.1-alpha-win10-x64-installer.exe (upd:2023-03-07) RPM for Fedora/CentOS/RedHat: coming soon DEB for Ubuntu/Debian: coming soon  Please, submit any bugs found here: github.com/AgaveStorm/yui/issues
+Install Yui-GUI alpha  Download installer for windows 10: Yui-1.0.1-alpha-win10-x64-installer-signed.exe (upd:2023-03-07) RPM for Fedora/CentOS/RedHat: coming soon DEB for Ubuntu/Debian: coming soon  Please, submit any bugs found here: github.com/AgaveStorm/yui/issues
 Changelog [2023-02-20] Added  Dark/Light theme support  </description>
     </item>
     
